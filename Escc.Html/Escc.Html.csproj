@@ -48,9 +48,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="HtmlBlockElementFormatter.cs" />
+    <Compile Include="HtmlEncoder.cs" />
     <Compile Include="HtmlTagSantiser.cs" />
     <Compile Include="HtmlLinkFormatter.cs" />
     <Compile Include="IHtmlBlockElementFormatter.cs" />
+    <Compile Include="IHtmlEncoder.cs" />
     <Compile Include="IHtmlLinkFormatter.cs" />
     <Compile Include="IHtmlParser.cs" />
     <Compile Include="IHtmlTagSanitiser.cs" />
