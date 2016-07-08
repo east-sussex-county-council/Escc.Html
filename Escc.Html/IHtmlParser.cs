@@ -3,6 +3,9 @@ using System.Collections.ObjectModel;
 
 namespace Escc.Html
 {
+    /// <summary>
+    /// Utility methods to parse and work with fragments of HTML
+    /// </summary>
     public interface IHtmlParser
     {
         /// <summary>

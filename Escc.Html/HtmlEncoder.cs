@@ -17,7 +17,7 @@ namespace Escc.Html
         /// <param name="text">The text to encode.</param>
         /// <returns>HTML encoded text</returns>
         /// <remarks>Code from http://www.codeproject.com/Articles/20255/Full-HTML-Character-Encoding-in-C</remarks>
-        public string HtmlEncode(string text)
+        public string HtmlEncodeEveryCharacter(string text)
         {
             char[] chars = HttpUtility.HtmlEncode(text).ToCharArray();
             StringBuilder result = new StringBuilder(text.Length + (int)(text.Length * 0.1));

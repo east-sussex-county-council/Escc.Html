@@ -1,5 +1,8 @@
 namespace Escc.Html
 {
+    /// <summary>
+    /// Format and fix HTML block elements such as paragraphs and headings
+    /// </summary>
     public interface IHtmlBlockElementFormatter
     {
         /// <summary>

@@ -11,6 +11,6 @@ namespace Escc.Html
         /// <param name="text">The text to encode.</param>
         /// <returns>HTML encoded text</returns>
         /// <remarks>Code from http://www.codeproject.com/Articles/20255/Full-HTML-Character-Encoding-in-C</remarks>
-        string HtmlEncode(string text);
+        string HtmlEncodeEveryCharacter(string text);
     }
 }

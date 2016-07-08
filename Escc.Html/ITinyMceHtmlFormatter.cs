@@ -1,5 +1,8 @@
 namespace Escc.Html
 {
+    /// <summary>
+    /// Methods for working with the HTML output by TinyMCE
+    /// </summary>
     public interface ITinyMceHtmlFormatter
     {
         /// <summary>

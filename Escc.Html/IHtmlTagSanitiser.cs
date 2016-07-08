@@ -1,5 +1,8 @@
 ﻿namespace Escc.Html
 {
+    /// <summary>
+    /// Remove or escape HTML tags in a string
+    /// </summary>
     public interface IHtmlTagSanitiser
     {
         /// <summary>
