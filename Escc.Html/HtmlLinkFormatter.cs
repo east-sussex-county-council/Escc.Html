@@ -16,17 +16,22 @@ namespace Escc.Html
         /// Get the text content of an HTML string, but without text used for links
         /// </summary>
         /// <param name="text">The text.</param>
+        /// <param name="tagSanitiser">The tag sanitiser.</param>
         /// <returns></returns>
-        public string TextOutsideLinks(string text)
+        public string TextOutsideLinks(string text, IHtmlTagSanitiser tagSanitiser)
         {
             if (String.IsNullOrEmpty(text)) return text;
+            if (tagSanitiser == null)
+            {
+                throw new ArgumentNullException(nameof(tagSanitiser));
+            }
 
             // Remove any links including the link text
             const string anythingExceptEndAnchor = "((?!</a>).)*";
             text = Regex.Replace(text, "<a [^>]*>" + anythingExceptEndAnchor + "</a>", String.Empty);
 
             // Remove any other HTML, and what's left is text outside links
-            text = HttpUtility.HtmlDecode(new HtmlTagSantiser().StripTags(text));
+            text = HttpUtility.HtmlDecode(tagSanitiser.StripTags(text));
 
             // Any remaining text is invalid
             return text.Trim();

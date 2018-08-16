@@ -8,7 +8,7 @@ namespace Escc.Html
     /// <summary>
     /// Remove or escape HTML tags in a string
     /// </summary>
-    public class HtmlTagSantiser : IHtmlTagSanitiser
+    public class HtmlTagSanitiser : IHtmlTagSanitiser
     {
         /// <summary>
         /// Removes XML/HTML tags from a string, leaving only the text content

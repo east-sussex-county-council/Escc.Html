@@ -11,8 +11,9 @@ namespace Escc.Html
         /// Get the text content of an HTML string, but without text used for links
         /// </summary>
         /// <param name="text">The text.</param>
+        /// <param name="tagSanitiser">The tag sanitiser.</param>
         /// <returns></returns>
-        string TextOutsideLinks(string text);
+        string TextOutsideLinks(string text, IHtmlTagSanitiser tagSanitiser);
 
         /// <summary>
         /// Gets an abridged version of an absolute URL with a maximum of 60 characters, which may not work as a link
